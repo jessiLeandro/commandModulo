@@ -1,0 +1,133 @@
+.div-main-ModalStatus {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* height: 70vh; */
+  overflow: auto;
+  /* overflow: overlay */
+}
+
+.div-main-ModalStatus table {
+  width: 100%;
+}
+
+.div-main-ModalStatus tr:nth-child(2n) {
+  background-color: rgba(53, 117, 167, 0.2);
+}
+.div-main-ModalStatus tr:nth-child(2n + 1) {
+  background-color: chip;
+}
+
+.div-main-ModalStatus th {
+  padding: 2px 5px;
+  background-color: #fff;
+  border: solid rgba(102, 102, 102, 0.3) 1px;
+  border-bottom: 1px solid #666;
+}
+
+.div-main-ModalStatus td {
+  padding: 2px 5px;
+  border: solid rgba(102, 102, 102, 0.2) 1px;
+}
+
+.div-card-status {
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid rgba(53, 117, 167, 0.4);
+  box-shadow: 0 0 5px 1px rgba(53, 117, 167, 0.4);
+  border-radius: 5px;
+  padding: 10px 10px 0;
+  overflow: hidden;
+
+  height: 90%;
+  /* transition: max-height 0.3s ease-in 0s !important; */
+}
+
+.div-card-status[up="true"] {
+  padding: 10px;
+}
+
+.div-content-upDown {
+  height: auto;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out 0s !important;
+}
+
+.div-content-upDown[up="true"] {
+  max-height: 300px;
+  transition: max-height 0.5s ease-in-out 0s !important;
+}
+
+/* .div-content-upDown[up="false"] {
+  height: 0;
+  transition: max-height 1s linear 0s !important;
+} */
+
+/* .div-card-status:hover {
+  max-height: 500px;
+  transition: max-height 0.5s ease-out 0s !important;
+} */
+
+.icon-status-conexao {
+  font-size: 1.5em;
+  margin: 2px 0 0 10px;
+}
+
+.label-status-conexao {
+  display: flex;
+  align-items: center;
+}
+
+#icon-UpOutlined-modalStatus {
+}
+
+/* @keyframes upDown {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: scale(0.5, 0.1);
+  }
+  60% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: scale(1);
+  }
+} */
+
+@keyframes upDown {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5, 0);
+  }
+  100% {
+    transform: scale(1, -1);
+  }
+}
+
+@keyframes upDown1 {
+  0% {
+    transform: scale(1, -1);
+  }
+  50% {
+    transform: scale(0.5, 0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#icon-UpOutlined-modalStatus[up="true"] {
+  animation: upDown 0.5s ease 0s 1 normal forwards;
+}
+
+#icon-UpOutlined-modalStatus[up="false"] {
+  animation: upDown1 0.5s ease 0s 1 normal forwards;
+}

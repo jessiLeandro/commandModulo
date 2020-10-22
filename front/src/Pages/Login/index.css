@@ -1,0 +1,391 @@
+.div-main-login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* background-color: #00bfff; */
+  /* background-color: rgba(33, 190, 251, 0.1); */
+  background-image: linear-gradient(
+    to top,
+    rgba(135, 206, 250, 0.2),
+    rgba(135, 206, 250, 0.5),
+    rgba(135, 206, 251, 1)
+  );
+
+  /* background-color: rgba(135, 206, 250, 0.5); */
+}
+
+.div-block-form {
+  min-width: 150px;
+  min-height: 250px;
+}
+
+.card {
+  position: relative;
+  background-color: #fff !important;
+}
+
+@media (max-width: 760px) {
+  .card {
+    min-width: 250px;
+    min-height: 300px;
+    border: 1px solid #151c4f;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 1px rgb(21, 28, 79);
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .div-main-login h1 {
+    top: 5%;
+    left: 17px !important;
+    font-size: 2em !important;
+    max-width: 370px !important;
+
+    /* top: calc(50% - 225px); */
+  }
+
+  .div-block-form {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px 15px 0;
+
+    left: 0;
+    top: 15%;
+    position: absolute;
+    /* position: absolute; */
+  }
+}
+
+@media (min-width: 760px) {
+  .card {
+    position: fixed !important;
+
+    min-width: 750px;
+    max-width: 1000px;
+    width: 85%;
+    min-height: 400px;
+    max-height: 500px;
+    height: 45vw;
+
+    background: url(/connectaModulo1.png);
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: right;
+
+    border: 2px solid #151c4f;
+    border-radius: 50px;
+    background-origin: border-box;
+
+    box-shadow: 10px 10px 25px 1px #151c4f;
+  }
+
+  .div-block-form {
+    width: 30%;
+    max-width: 500px;
+
+    position: absolute !important;
+    top: calc(50% - 100px);
+    left: calc(10%);
+  }
+
+  .div-main-login h1 {
+    top: calc(50% - 175px);
+  }
+}
+
+.input-block {
+  width: 100%;
+  position: relative;
+}
+
+.input-block input {
+  -moz-appaerance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  padding: 16px 0 0 0;
+  border: none;
+  border-bottom: 1px solid #151c4f;
+  background-color: transparent;
+  outline: none;
+
+  width: 100%;
+  min-width: 120px;
+
+  margin: 20px 0;
+
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  padding-left: 25px;
+}
+
+.span-erro {
+  color: red;
+  position: absolute;
+  right: 10px;
+  font-size: 1rem;
+  bottom: 0;
+}
+
+.input-block input ~ label {
+  position: absolute;
+  top: 36px;
+  left: 5px;
+  font-size: 1.2em;
+  color: rgba(0, 0, 0, 0.4);
+  padding-left: 20px;
+
+  transition: 0.4s;
+}
+
+.input-block input:focus ~ label,
+.input-block input:valid ~ label {
+  transform: translateY(-24px);
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+}
+
+.input-block i:first-child {
+  position: absolute;
+  font-size: 1.2em;
+  top: 36px;
+  left: 0px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.input-block input ~ i {
+  position: absolute;
+  top: 38px;
+  right: 0;
+  color: rgba(0, 0, 0, 0.4);
+  transition: 0.4s;
+}
+
+.input-block input ~ i:hover {
+  color: rgba(0, 0, 0, 0.8);
+  transition: 0.4s;
+}
+
+.button-logar {
+  margin-top: 20px;
+  background-color: #fff;
+  width: 100px;
+  height: 30px;
+  border: 1px solid rgba(21, 28, 79, 0.4) !important;
+  border-radius: 4px;
+  outline: none;
+
+  transition: color 0.3s ease 0s, border 0.3s ease 0s,
+    background-color 1s ease 0s;
+}
+
+.button-logar:hover {
+  cursor: pointer;
+  border: 1px solid #56e2dd !important;
+  box-shadow: 0 0 3px 0 #56e2dd;
+  color: #56e2dd;
+}
+
+.button-logar:active {
+  border: 1px solid #343a8f !important;
+  color: #343a8f;
+  box-shadow: 0 0 3px 0 #343a8f;
+}
+
+.button-logar:disabled {
+  /* background-color: rgba(53, 117, 167, 0.1); */
+  /* transition: background-color 0.5s ease 0s; */
+  background-color: #f5f5f5;
+  cursor: not-allowed !important;
+  color: rgba(0, 0, 0, 0.25);
+  box-shadow: none;
+  border: 1px solid #d9d9d9 !important;
+}
+
+.button-logar:disabled:hover {
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.25);
+}
+
+.button-logar:disabled label {
+  cursor: not-allowed !important;
+}
+
+.div-block-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon-Eye {
+  font-size: 1.2em;
+}
+
+.div-border {
+  display: block;
+  background-color: #343a8f;
+  position: absolute;
+  left: 50%;
+  bottom: 24%;
+  width: 0;
+  height: 1.2px;
+}
+
+.input-block input:focus ~ div {
+  width: 100%;
+  left: 0;
+  background-color: #56e2dd;
+
+  transition: width 0.2s linear 0.1s, left 0.2s ease-out 0.1s,
+    background-color 0.5s ease;
+}
+
+.div-main-login h1 {
+  max-width: 50vw;
+  position: absolute;
+  left: calc(10%);
+  color: #151c4f;
+  font-size: 2.2em;
+}
+
+@keyframes nuvem-1 {
+  0% {
+    left: -200px;
+    top: 0px;
+  }
+  100% {
+    left: calc(100vw + 200px);
+    top: 0px;
+  }
+}
+
+@keyframes nuvem-2 {
+  /* 0% {
+    left: 33vw;
+    top: 50px;
+  }
+  66% {
+    left: calc(100vw + 200px);
+    top: 50px;
+  }
+  66.01% {
+    left: -200px;
+    top: 50px;
+  }
+  100% {
+    left: 33vw;
+    top: 50px;
+  } */
+
+  0% {
+    left: -200px;
+    top: 50px;
+  }
+  100% {
+    left: calc(100vw + 200px);
+    top: 50px;
+  }
+}
+
+@keyframes nuvem-3 {
+  /* 0% {
+    left: 66vw;
+    top: 40px;
+  }
+  28% {
+    left: calc(100vw + 200px);
+    top: 40px;
+  }
+  28.01% {
+    left: -200px;
+    top: 40px;
+  }
+  100% {
+    left: 66vw;
+    top: 40px;
+  } */
+
+  0% {
+    left: -200px;
+    top: 45px;
+  }
+  100% {
+    left: calc(100vw + 200px);
+    top: 45px;
+  }
+}
+
+/* div {
+  |name| |duration| |timing-function| |delay| |iteration-count| |direction| |play-state|;
+} */
+
+/* div { animation: animacaoBolada 5s ease 1s infinite alternate; } */
+
+.div-nuvem-1 {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background: url(/nuvem.png);
+
+  animation-name: nuvem-1;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: running;
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: right;
+}
+
+.div-nuvem-2 {
+  position: fixed;
+  /* left: 100px; */
+  /* top: 75vw; */
+  width: 150px;
+  height: 150px;
+  background: url(/nuvem.png);
+
+  animation: nuvem-2 15s linear 5s infinite normal running;
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: right;
+}
+
+.div-nuvem-3 {
+  position: fixed;
+  /* left: 50vw; */
+  /* top: 30px; */
+  width: 75px;
+  height: 100px;
+  background: url(/nuvem.png);
+
+  animation: nuvem-3 15s linear 10s infinite normal running;
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: right;
+}
+
+/* .div-nuvem-4 {
+  position: fixed;
+  left: 50vw;
+  top: 60px;
+  width: 150px;
+  height: 150px;
+  background: url(/nuvem.png);
+
+  animation: animacaoBolada 15s linear 1s infinite normal running;
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: right;
+} */

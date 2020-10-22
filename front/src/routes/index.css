@@ -1,0 +1,90 @@
+.div-main-route {
+  width: 100vw;
+  height: auto;
+  /* height: 2000px; */
+  /* height: 100vh; */
+  overflow: initial;
+}
+
+.div-navBar {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100vw;
+  /* background-color: rgb(21, 28, 79); */
+  /* background-image: linear-gradient(
+    90deg,
+    rgba(21, 28, 79, 0.3) 0%,
+    rgba(21, 28, 79, 0.8) 10%,
+    rgba(21, 28, 77, 1) 100% 
+  ); */
+
+  background: linear-gradient(
+    -45deg,
+    rgba(20, 28, 78, 1) 0%,
+    rgba(53, 117, 167, 1) 34%,
+    rgba(50, 155, 180, 1) 75%,
+    rgba(67, 188, 193, 1) 100%
+  );
+  box-shadow: 0 1px 10px 5px rgba(135, 206, 251, 0.8);
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: rgb(21, 28, 79);
+}
+
+.div-navBar h1 {
+  margin: 0;
+}
+
+.div-footer-main {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: black;
+  text-align: center;
+  /* overflow: hidden !important; */
+}
+
+.div-main-content {
+  width: 100vw;
+  position: fixed;
+  top: 50px;
+  height: 2000px;
+  /* height: 100vh; */
+  overflow: hidden !important;
+  /* min-height: ; */
+  /* height: calc(100vh - 50px); */
+  overflow: auto;
+}
+
+#icon-logout {
+  font-size: 0.7rem;
+  /* color: white; */
+}
+
+#div-block-logout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  height: 100%;
+  margin: 0;
+}
+
+#button-user-dropdwon {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu-user {
+  width: 200px;
+}

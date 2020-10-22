@@ -1,0 +1,32 @@
+.div-main-ModalStatus {
+  padding: 10px;
+}
+
+.div-main-ModalStatus table {
+  width: 100%;
+}
+
+.div-main-ModalStatus tr:nth-child(2n) {
+  background-color: rgba(67, 188, 193, 0.1);
+}
+.div-main-ModalStatus tr:nth-child(2n + 1) {
+  background-color: rgba(53, 117, 167, 0.1);
+}
+
+.div-main-ModalStatus th {
+  padding: 2px 5px;
+  background-color: #fff;
+  border: solid rgba(102, 102, 102, 0.3) 1px;
+  border-bottom: 1px solid #666;
+}
+
+.div-main-ModalStatus td {
+  padding: 2px 5px;
+  border: solid rgba(102, 102, 102, 0.2) 1px;
+}
+
+.block-td {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

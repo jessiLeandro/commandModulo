@@ -1,0 +1,30 @@
+.item {
+  cursor: move;
+  padding: 10px;
+  border: 1px solid grey;
+  margin-bottom: 20px;
+
+  border: 1px dashed gray;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  background-color: lightblue;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item h3 {
+  margin: 0;
+}
+
+.item span {
+  font-size: 1.1em;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.item span:hover {
+  color: #000;
+}
