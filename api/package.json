@@ -17,6 +17,7 @@
     "moment": "^2.27.0",
     "morgan": "^1.10.0",
     "mysql2": "^2.1.0",
+    "pg": "^8.6.0",
     "ramda": "^0.27.1",
     "sequelize": "^6.3.5",
     "sequelize-cli": "^6.2.0"

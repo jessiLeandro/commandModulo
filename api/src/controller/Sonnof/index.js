@@ -7,6 +7,9 @@ class SonoffController {
   async get(req, res, next) {
     const transaction = await database.transaction();
 
+    // console.log(req)
+    console.log(req.query)
+
     try {
       const chip = await chipDomain.create(req.query, { transaction });
 
